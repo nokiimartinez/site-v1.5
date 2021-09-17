@@ -1,0 +1,490 @@
+@font-face {
+  font-family: "EB_garamond";
+  src: url("police/ebgaramond-variablefont_wght-webfont.woff2") format("woff2"), url("police/ebgaramond-variablefont_wght-webfont.woff") format("woff"), url("police/ebgaramond-variablefont_wght-webfont.ttf") format("truetype"), url("police/ebgaramond-variablefont_wght-webfont.eot") format("embedded-opentype"), url("police/ebgaramond-variablefont_wght-webfont.svg") format("svg");
+}
+
+@font-face {
+  font-family: "authentic_signature";
+  src: url("police/authentic_signature-webfont.woff2") format("woff2"), url("police/authentic_signature-webfont.woff") format("woff"), url("police/authentic_signature-webfont.ttf") format("truetype"), url("police/authentic_signature-webfont.eot") format("embedded-opentype"), url("police/authentic_signature-webfont.svg") format("svg");
+}
+
+@font-face {
+  font-family: "walbaum";
+  src: url("police/Walbaum60pt-Regular.woff2") format("woff2"), url("police/Walbaum60pt-Regular.woff") format("woff"), url("police/Walbaum60pt-Regular.ttf") format("truetype"), url("police/Walbaum60pt-Regular.eot") format("embedded-opentype"), url("police/Walbaum60pt-Regular.svg") format("svg");
+}
+
+@font-face {
+  font-family: "walbaum_light";
+  src: url("police/Walbaum60pt-Light.woff2") format("woff2"), url("police/Walbaum60pt-Light.woff") format("woff"), url("police/Walbaum60pt-Light.ttf") format("truetype"), url("police/Walbaum60pt-Light.eot") format("embedded-opentype"), url("police/Walbaum60pt-Light.svg") format("svg");
+}
+
+@font-face {
+  font-family: "EB_garamond_italic";
+  src: url("police/EBGaramond-Italic.woff2") format("woff2"), url("police/EBGaramond-Italic.woff") format("woff"), url("police/EBGaramond-Italic.ttf") format("truetype"), url("police/EBGaramond-Italic.eot") format("embedded-opentype"), url("police/EBGaramond-Italic.svg") format("svg");
+}
+
+.spacing {
+  letter-spacing: 0.1em;
+}
+
+.spacingmoins {
+  letter-spacing: 0.08em;
+}
+
+:root {
+  --police_titre: "authentic_signature";
+  --couleurnoir: #292929;
+  --couleuror: #dcd4c8;
+  --couleurrose: rgba(224, 205, 169);
+}
+
+.authentic_signature {
+  font-family: var(--police_titre);
+}
+
+.titre {
+  margin-bottom: 3%;
+}
+
+.bodyy {
+  background-image: url(img/fond.jpg);
+}
+
+.walbaum_light {
+  font-family: "walbaum_light";
+}
+
+.EB_garamond_italic {
+  font-family: "EB_garamond_italic";
+}
+
+.EB_garamond {
+  font-family: "EB_garamond";
+}
+
+header {
+  background-color: var(--couleurnoir);
+  height: 100px;
+}
+
+nav h1 {
+  margin-left: 2%;
+  font-family: "authentic_signature";
+  color: white;
+}
+
+.navbar-nav a {
+  color: var(--couleuror) !important;
+}
+
+.navbar-toggler {
+  z-index: 4;
+}
+
+.encadre {
+  background-color: #141414a1;
+  width: fit-content;
+  height: auto;
+  border: solid 3px var(--couleuror);
+}
+
+.encadre h2 {
+  letter-spacing: 0.1em;
+  color: var(--couleuror);
+}
+
+hr {
+  width: 350px;
+  color: #775e3e;
+  height: 5px !important;
+}
+
+header a {
+  color: var(--couleuror);
+  text-decoration: none;
+}
+
+.bandeau_mission p {
+  font-size: 0.8em;
+}
+
+.bandeau_description_bouton a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white !important ;
+  text-decoration: none;
+}
+
+svg {
+  opacity: 0.8;
+  fill: #a79176;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 750px;
+}
+
+.bandeau_image {
+  height: 450px;
+}
+
+.bandeau_titre {
+  height: 250px;
+}
+
+.bandeau_description {
+  font-size: 0.8em;
+  height: auto;
+}
+
+.content_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_right {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 60px;
+}
+
+.content_left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 55px;
+}
+
+.bandeau_citation {
+  color: black;
+  margin-bottom: -47px;
+  background-color: var(--couleuror);
+  height: 250px;
+  width: auto;
+}
+
+.bandeau_logo {
+  margin-right: 0px;
+  background-color: var(--couleuror);
+  min-height: 350px;
+  width: auto;
+}
+
+.bandeau_accueil {
+  margin-right: 0px;
+  padding-top: 40px;
+  background-color: var(--couleuror);
+  min-height: 750px;
+  width: auto;
+}
+
+.icone_mission {
+  margin-left: -28px;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+h2 {
+  color: var(--couleuror);
+}
+
+.texte_accueil {
+  color: var(--couleurnoir);
+  max-width: 700px;
+}
+
+.texte_accueilblanc {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.or {
+  background-color: var(--couleuror);
+  height: 300px;
+}
+
+.or_accueil {
+  background-color: var(--couleuror);
+  height: 300px;
+}
+
+.cadre {
+  text-align: center;
+  height: 25%;
+  padding: 50px;
+  font-size: 1.2em;
+  border: solid 1px var(--couleuror);
+  margin-top: -50px;
+  margin-bottom: 150px;
+}
+
+.cadre_ml {
+  text-align: center;
+  height: 25%;
+  padding: 50px;
+  font-size: 1.2em;
+  border: solid 1px var(--couleuror);
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.cadre .btn {
+  background-color: var(--couleuror);
+}
+
+.cadre .btn a {
+  color: white;
+}
+
+.rond {
+  background-color: var(--couleuror);
+  width: 410px;
+  height: 120px;
+  color: white;
+  text-align: center;
+}
+
+.rondtest {
+  background-color: var(--couleuror);
+  width: 410px;
+  height: 120px;
+  color: white;
+  text-align: center;
+  margin-top: -50px;
+  margin-left: 105px;
+}
+
+.bandeau_mission {
+  background-color: #dcd4c886;
+  min-height: 500px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mission h3 {
+  margin-left: -17px;
+}
+
+.mission {
+  padding-top: 30px;
+  padding-left: 20px;
+  transition: all 0.6s;
+  border: solid 3px var(--couleuror);
+  margin-right: 90px;
+  width: 400px;
+  height: auto;
+}
+
+.mission:hover {
+  transition: all 0.6s;
+  background-color: var(--couleuror);
+  border: solid 3px var(--couleuror);
+  box-shadow: 5px 5px 5px var(--couleuror);
+  opacity: 0.8;
+  margin-right: 90px;
+  width: 400px;
+  height: auto;
+}
+
+.titre_services {
+  font-size: 1.5em;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    background-color: #000000;
+  }
+}
+
+.logo {
+  transition: 0.6s;
+  opacity: 0.7;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+}
+
+.logo:hover {
+  transition: 0.6s;
+  opacity: 1;
+  width: 150px;
+  height: 150px;
+}
+
+.or_accueil_titre {
+  background-color: var(--couleuror);
+  height: 130px;
+}
+
+footer {
+  background-color: var(--couleurnoir);
+  color: var(--couleuror);
+}
+
+.btn {
+  background-color: var(--couleuror);
+  color: white;
+}
+.cadre_contact {
+  margin-top: -100px;
+  border: solid 1px var(--couleuror);
+}
+
+.justify {
+  text-align: justify;
+}
+
+.service_1 {
+  background-image: url(img/ouverture.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.service_2 {
+  background-image: url(img/gestionmensuelle.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.service_3 {
+  background-image: url(img/autresmissions.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+}
+
+.accueil {
+  background-image: url(img/accueil.jpg);
+  min-height: 550px;
+}
+
+.contact {
+  background-image: url(img/contact.jpg);
+  min-height: 550px;
+}
+
+.apropos {
+  background-image: url(img/apropos.jpg);
+  min-height: 550px;
+}
+
+.service {
+  background-image: url(img/services.jpg);
+  background-position: center;
+  min-height: 550px;
+}
+
+.accueil,
+.contact,
+.apropos,
+.service,
+.bodyy {
+  position: relative;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: bottom;
+}
+
+footer {
+  background-color: var(--couleurnoir);
+  height: auto;
+  width: auto;
+}
+
+footer img {
+  transition: 0.6s;
+  opacity: 0.75;
+  width: 150px;
+  height: 150px;
+}
+
+footer img:hover {
+  transition: 0.6s;
+  opacity: 1;
+  width: 150px;
+  height: 150px;
+}
+
+footer a {
+  color: var(--couleuror);
+  text-decoration: none;
+}
+
+.footer_i {
+  height: 45px;
+  width: 45px;
+}
+
+footer li {
+  list-style: none;
+}
+
+.footer_hr {
+  color: var(--couleuror);
+  width: 550px;
+}
+
+.bandeau_apropos {
+  min-height: 750px;
+}
+
+.bandeau_signature {
+  color: black;
+  margin-top: 45px;
+  margin-bottom: -5px;
+  padding-right: 20%;
+  padding-bottom: 75px;
+  height: auto;
+}
+
+.bandeau_contact {
+  color: black;
+  background-color: var(--couleuror);
+  height: auto;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.bandeau_contact textarea {
+  width: 350px;
+}
+.bandeau_contact input {
+  width: 350px;
+}
+
+/* .colcontact {
+  margin-top: 60px;
+} */
+
+form .btn {
+  color: black;
+}
+
+.petitesignature {
+  margin-top: -85px;
+}
+
+.container_contact {
+  padding-left: 0px;
+  padding-right: 0px;
+}
