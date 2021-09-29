@@ -35,7 +35,7 @@
 					<p class="texte_accueil walbaum_light fs-5 text-left ms-5">Pour une proposition de services complètement adaptée à vos besoins, veuillez s’il vous plait remplir ce formulaire. Nous reviendrons vers vous dans les plus brefs délais.</p>
 				</div>
 				<div class="col content_center pt-5 pb-5">
-				<form method="POST">
+				<form id="formulaire">
 				<div>
 				  <label for="Nom" class="form-label"></label>
 				  <input type="Nom" class="form-control" id="Nom" name='Nom' placeholder="Nom">
@@ -88,24 +88,31 @@
 		<div class="row EB_garamond_italic spacing "><div class="col"><p class="fs-5 pe-5 text-center"><a class="text-white" href="mentionslegales.html">mentions légales</a></p></div></div>
 		</div>
 	</footer>
-
-	<?php
-
-		require ('sendemail.php'); 
-
-		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-			$nom = $_POST['Nom'] ;
-			$prenom = $_POST['Prenom'] ;
-			$email = $_POST['Email'] ;
-			$sujet = $_POST['Sujet'] ;
-			$message = $_POST['Message'] ;
-			$entreprise = $_POST['Entreprise'];
-
-			$message2 = $message . " envoyé par ". $email . "<br>" .$prenom . $nom . "Entreprise : " . $entreprise ;
-			send_mail('nicolasjean.martinez@gmail.com', $sujet , $message2);
-			echo"<br>Email envoyé" ;
-		}
-	?>
 	
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+
+$(document).ready(function () {
+	$("#formulaire").submit(function(e) {
+		e.preventDefault();
+		var dataform = $(this).serialize();
+		$.ajax({ 
+			method : "POST",
+			url : "ajax.php",
+			data: dataform,
+			dataType: "JSON",
+			success: function(result){
+				console.log(result);
+				if (result.status === "error" ){
+					alert(result.message);
+				}else if (result.status === "ok"){
+					alert(result.message);
+				}
+			}
+		})		
+	});
+});
+
+</script>
 </html>
