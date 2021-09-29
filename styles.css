@@ -77,10 +77,6 @@ nav h1 {
   color: var(--couleuror) !important;
 }
 
-.navbar-toggler {
-  z-index: 4;
-}
-
 .encadre {
   background-color: #141414a1;
   width: fit-content;
@@ -187,6 +183,10 @@ img {
 
 .icone_mission {
   margin-left: -28px;
+}
+
+.navbar{
+  z-index: 4;
 }
 
 .navbar-brand {
@@ -394,6 +394,7 @@ footer {
 .apropos,
 .service,
 .bodyy {
+  z-index: 2 ;
   position: relative;
   background-position: bottom;
   background-size: cover;
