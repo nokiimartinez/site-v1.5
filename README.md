@@ -17,5 +17,7 @@ Formulaire de contact en Ajax.
 #in progress 
 
 SEO a travailler, balise "metadescription" , "main" , "section". 
+
 Sitemap.xml
+
 Robot.txt
