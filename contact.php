@@ -66,7 +66,7 @@
 					En soumettant ce formulaire, je prends <br> connaissance que les informations declarées <br> dans ce formulaire soient utilisés pour permettre <br> de me recontacter. 
 				</div>
 				<div class="mb-3 mt-3 text-center">
-					<button type="submit" class=" btn ps-5 pe-5 fs-5 me-5 shadow-lg walbaum_light" id="bouton">Envoyer</button>
+					<button type="submit" class="disabled btn ps-5 pe-5 fs-5 me-5 shadow-lg walbaum_light" id="bouton">Envoyer</button>
 				</div>
 				</form>
 				</div>
@@ -120,22 +120,17 @@ $(document).ready(function () {
 	});
 });
 
-// document.getElementById("bouton").addEventListener("click", validation);
 
-// function validation() {
-// // JS pour les conditions de soumission du formulaire 
-// // selection de la checkbox 
-// checkbox = document.getElementById("check");
-// console.log(checkbox.checked);
-// //si checbox est bien checké il enleve la classe par default "disabled"
-// if (checkbox.checked){
-// 	submit = document.getElementById("bouton");
-// 	submit.classList.remove("disabled");
-// // sinon il l'ajoute
-// }else {
-// 	submit.classList.add("disabled");
-// }
-// }
+checkbox = document.querySelector('#check') ; 
+
+ 	checkbox.addEventListener('change',function(){
+	submit = document.getElementById("bouton");
+	if ( checkbox.checked){
+		submit.classList.remove("disabled");
+	}else {
+		submit.classList.add("disabled");
+	}
+});
 
 </script>
 </html>
