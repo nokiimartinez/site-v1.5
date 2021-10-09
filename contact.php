@@ -30,11 +30,12 @@
 		</div>
 		<div class="container-fluid container_contact">
 		<div class="row bandeau_contact">
+				<div class="col-2"></div>
 				<div class="col pt-5 ps-5 text-left">
-					<h2 class="texte_accueil walbaum_light text-left fs-3 ms-5 mb-5 ">CONTACT</h2><br>
+					<h2 class="texte_accueil walbaum_light text-left fs-3 pt-5 mt-5 ms-5 mb-5 ">CONTACT</h2><br>
 					<p class="texte_accueil walbaum_light fs-5 text-left ms-5">Pour une proposition de services complètement adaptée à vos besoins, veuillez s’il vous plait remplir ce formulaire. Nous reviendrons vers vous dans les plus brefs délais.</p>
 				</div>
-				<div class="col content_center pt-5 pb-5">
+				<div class="col content_left pt-5 pb-5">
 				<form id="formulaire">
 				<div>
 				  <label for="Nom" class="form-label"></label>
@@ -59,9 +60,13 @@
 				<div>
 				  <label for="Message" class="form-label"></label>
 				  <textarea class="form-control" id="Message" rows="3" name='Message' placeholder="Message"></textarea>
-				  </div>
-				  <div class="mb-3 mt-3 text-center">
-					<button type="submit" class=" btn ps-5 pe-5 fs-5 me-5 shadow-lg walbaum_light">Envoyer</button>
+				</div>
+				<div class="py-4">
+					<input type="checkbox" id="check">
+					En soumettant ce formulaire, je prends <br> connaissance que les informations declarées <br> dans ce formulaire soient utilisés pour permettre <br> de me recontacter. 
+				</div>
+				<div class="mb-3 mt-3 text-center">
+					<button type="submit" class=" btn ps-5 pe-5 fs-5 me-5 shadow-lg walbaum_light" id="bouton">Envoyer</button>
 				</div>
 				</form>
 				</div>
@@ -69,23 +74,23 @@
 		</div>
 
 
-	<footer>
+		<footer>
 		<div class="container-fluid">
 		<div class="row">
-			<div class="col-12 col-sm-6 col-md-4 walbaum_light spacing mt-5 text-center "><h3 class="ms-5 mt-3 fs-5">Ils lui font confiance</h3><img class="mt-4 " src="img/ImageCRU.jpeg" alt="Logo de l'entreprise CRU "> <img class="mt-4 ms-2 " src="img/ImageBS.jpg" alt="Logo de l'entreprise backstage "></div>
+			<div class="col-12 col-sm-6 col-md-4 walbaum_light mt-5 text-center "><h3 class="ms-5 mt-3 fs-5">Ils lui font confiance</h3><img class="mt-4 " src="img/ImageCRU.jpeg" alt="Logo de l'entreprise CRU "> <img class="mt-4 ms-2 " src="img/ImageBS.jpg" alt="Logo de l'entreprise backstage "></div>
 			<div class="col-12 col-sm-6 col-md-4 walbaum_light spacing mt-5">
-				<h3 class="mt-4 me-5 text-center authentic_signature display-4 "> Caroline Martinez </h3>
-				<ul class="mt-4 me-5 text-center fs-5 ">
-					<li class="me-5"><a href="index.html" alt="lien vers la page 'accueil' " >Accueil </a></li>
-					<li class="me-5"><a href="services.html" alt="lien vers la page 'services' " >Services </a></li>
-					<li class="me-5"><a href="apropos.html" alt="lien vers la page 'a propos' " >A propos </a></li>
-					<li class="me-5"><a href="contact.php" alt="lien vers la page 'contact' " >Contact </a></li>
+				<h3 class="mt-4 ms-4 text-center authentic_signature display-5 "> Caroline Martinez </h3>
+				<ul class="mt-4 text-center fs-5 ">
+					<li ><a href="index.html" alt="lien vers la page 'accueil' " >Accueil </a></li>
+					<li ><a href="services.html" alt="lien vers la page 'services' " >Services </a></li>
+					<li ><a href="apropos.html" alt="lien vers la page 'a propos' " >A propos </a></li>
+					<li ><a href="contact.php" alt="lien vers la page 'contact' " >Contact </a></li>
 				</ul>
 			</div>
 			<div class="col-12 col-sm-12 col-md-4 walbaum_light mt-5 text-center"><h3 class="mt-4 text-center fs-5 ">Suivez nous sur linkedin</h3><a href="https://www.linkedin.com/in/caroline-martinez-3a82b7a8/" target="_blank" ><i class="mt-5 fs-3 bi bi-linkedin" ></i></a></div>
 		</div>
 		<div class="row content_center"><hr class="footer_hr solid mt-5"></div>
-		<div class="row EB_garamond_italic spacing "><div class="col"><p class="fs-5 pe-5 text-center"><a class="text-white" href="mentionslegales.html">mentions légales</a></p></div></div>
+		<div class="row EB_garamond_italic spacing "><div class="col"><p class="fs-5 text-center"><a class="text-white" href="mentionslegales.html">mentions légales</a></p></div></div>
 		</div>
 	</footer>
 	
@@ -114,6 +119,23 @@ $(document).ready(function () {
 		})		
 	});
 });
+
+// document.getElementById("bouton").addEventListener("click", validation);
+
+// function validation() {
+// // JS pour les conditions de soumission du formulaire 
+// // selection de la checkbox 
+// checkbox = document.getElementById("check");
+// console.log(checkbox.checked);
+// //si checbox est bien checké il enleve la classe par default "disabled"
+// if (checkbox.checked){
+// 	submit = document.getElementById("bouton");
+// 	submit.classList.remove("disabled");
+// // sinon il l'ajoute
+// }else {
+// 	submit.classList.add("disabled");
+// }
+// }
 
 </script>
 </html>
