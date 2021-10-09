@@ -19,7 +19,7 @@
             
             
 
-			$message2 = $message . " envoyé par ". $email . "<br>" .$prenom . $nom . "Entreprise : " . $entreprise ;
+			$message2 = $message . " envoyé par ". $email . "<br>" .$prenom." ".$nom." "."<br>"."Entreprise : " . $entreprise ;
 			send_mail('nicolasjean.martinez@gmail.com', $sujet , $message2);
 		}
 	?>
