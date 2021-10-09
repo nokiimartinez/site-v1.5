@@ -19,7 +19,7 @@ function send_mail($to, $subject, $body)
 	$mail = new PHPMailer();
 	$mail->CharSet = 'UTF-8';
 	$username         = "contact@nicodeveloppeur.fr"; // on utilise un compte gmail créé pour l'occasion
-	$password         = 'Majeuren2011';  // vous pourrez utiliser ce compte-ci ou paramétrer le votre si vous le souhaitez
+	$password         = '***********';  // vous pourrez utiliser ce compte-ci ou paramétrer le votre si vous le souhaitez
 	// dans ce diminuer la sécurité pour permettre l'authentification vcas pensez à aller dans les paramètres de sécurité de votre compte et ia des applications tierces
 	
 	$mail->IsSMTP();
