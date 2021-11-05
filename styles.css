@@ -90,7 +90,7 @@ nav h1 {
 }
 
 hr {
-  width: 350px;
+  width: 100% ;
   color: #775e3e;
   height: 5px !important;
 }
@@ -155,7 +155,6 @@ img {
   display: flex;
   justify-content: left;
   align-items: center;
-  padding-left: 55px;
 }
 
 .bandeau_citation {
