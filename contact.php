@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-	<header>
+	<header id="Header">
 		<nav class="navbar navbar-expand-lg navbar-dark">
 		  <div class="container-fluid">
 			<a class="navbar-brand" href="index.html"><h1 class="display-3 titre ">Caroline Martinez</h1></a>
@@ -26,7 +26,7 @@
 		  </div>
 		</nav>
 	</header>
-		<div class="contact">
+		<div id="image" class="contact">
 		</div>
 		<div class="container-fluid container_contact">
 		<div class="row bandeau_contact">
@@ -97,6 +97,23 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+    window.onscroll = function() {myFunction()};
+    var header = document.getElementById("Header");
+    var img = document.getElementById("image");
+    var sticky = header.offsetTop ;
+
+    function myFunction(){
+      if (window.pageYOffset > sticky ) {
+        header.classList.add("Header");
+        img.classList.add("contactN");
+      }else {
+        img.classList.remove("contactN");
+        header.classList.remove("Header");
+      }
+  }
+
+  </script>
 <script> 
 
 $(document).ready(function () {
