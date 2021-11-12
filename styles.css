@@ -99,6 +99,17 @@ nav h1 {
   border: solid 3px var(--couleuror);
 }
 
+.slogan{
+  max-width: 926px ;
+  letter-spacing: 0.1em;
+  height: auto;
+  text-align: center;
+  border: solid 3px var(--couleuror) ;
+  background-color: #141414a1;
+}
+
+
+
 .encadre h2 {
   letter-spacing: 0.1em;
   color: var(--couleuror);
@@ -481,6 +492,12 @@ footer li {
   padding-right: 20%;
   padding-bottom: 75px;
   height: auto;
+}
+
+@media(max-width:376px){
+  .content_right{
+    padding-right: 0 px;
+  }
 }
 
 .bandeau_contact {
