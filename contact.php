@@ -30,12 +30,10 @@
 		</div>
 		<div class="container-fluid container_contact">
 		<div class="row bandeau_contact">
-				<div class="col-2"></div>
-				<div class="col pt-5 ps-5 text-left">
-					<h2 class="texte_accueil walbaum_light text-left fs-3 pt-5 mt-5 ms-5 mb-5 ">CONTACT</h2><br>
-					<p class="texte_accueil walbaum_light fs-5 text-left ms-5">Pour une proposition de services complètement adaptée à vos besoins, veuillez s’il vous plait remplir ce formulaire. Nous reviendrons vers vous dans les plus brefs délais.</p>
+				<div class="col-12 col-lg-7 d-flex justify-content-center justify-content-lg-end align-items-center mt-5 mt-lg-0 mb-lg-5 pb-lg-5 ">
+					<p style="max-width:720px" class="texte_accueil text-center text-lg-start walbaum_light fs-5 pb-lg-5 pe-xxl-5 me-xxl-5 "> <span class="fs-3"> CONTACT </span> <br><br> Pour une proposition de services complètement adaptée à vos besoins, veuillez s’il vous plait remplir ce formulaire. Nous reviendrons vers vous dans les plus brefs délais.</p>
 				</div>
-				<div class="col content_left pt-5 pb-5">
+				<div class="col-12 col-lg-5 d-flex align-items-center justify-content-center justify-content-xxl-start pt-5 pb-5">
 				<form id="formulaire">
 				<div>
 				  <label for="Nom" class="form-label"></label>

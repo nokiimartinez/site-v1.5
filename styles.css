@@ -108,8 +108,6 @@ nav h1 {
   background-color: #141414a1;
 }
 
-
-
 .encadre h2 {
   letter-spacing: 0.1em;
   color: var(--couleuror);
@@ -223,7 +221,6 @@ h2 {
 
 .texte_accueil {
   color: var(--couleurnoir);
-  max-width: 700px;
 }
 
 .texte_accueilblanc {
@@ -307,8 +304,7 @@ h2 {
   border: solid 3px var(--couleuror);
   /* box-shadow: 5px 5px 5px var(--couleuror); */
   opacity: 0.8;
-  margin-right: 90px;
-  width: 400px;
+  max-width: 400px;
   height: auto;
 }
 
@@ -318,8 +314,7 @@ h2 {
   border: solid 3px var(--couleuror);
   box-shadow: 3px 3px 15px var(--couleuror);
   opacity: 1;
-  margin-right: 90px;
-  width: 400px;
+  max-width: 400px;
   height: auto;
 }
 
@@ -512,10 +507,10 @@ footer li {
 }
 
 .bandeau_contact textarea {
-  width: 350px;
+  max-width: 350px;
 }
 .bandeau_contact input {
-  width: 350px;
+  max-width: 350px;
 }
 
 .bandeau_contact input[type=checkbox] {
