@@ -8,10 +8,9 @@ function send_mail($from, $subject, $body)
 	$from = $from;
 	$to= $username;
 	$subject = $subject ;
-	$message = $body . "\r\n" . $from . "\r\n" ;
-	$headers = 'De :' . $from ;
+	$message = $body . "\r\n" ;
 
-	return mail($to, $subject, $message, $headers) ;
+	return mail($to, $subject, $message ) ;
 }
 
 

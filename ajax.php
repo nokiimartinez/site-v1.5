@@ -18,8 +18,11 @@
                 echo json_encode($arr); }
             
             
+			$message2 = $message . "\r\n" .$prenom." ".$nom." "."\r\n"."Entreprise : " . $entreprise . "\r\n". $email ;
+			
 
-			$message2 = $message . " envoyé par ". $email . "<br>" .$prenom." ".$nom." "."<br>"."Entreprise : " . $entreprise ;
 			send_mail('nicolasjean.martinez@gmail.com', $sujet , $message2);
+
+			
 		}
 	?>
