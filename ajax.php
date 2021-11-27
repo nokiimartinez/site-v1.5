@@ -21,7 +21,7 @@
 			$message2 = $message . "\r\n" .$prenom." ".$nom." "."\r\n"."Entreprise : " . $entreprise . "\r\n". $email ;
 			
 
-			send_mail('nicolasjean.martinez@gmail.com', $sujet , $message2);
+			send_mail('martinez.pro@outlook.fr', $sujet , $message2);
 
 			
 		}

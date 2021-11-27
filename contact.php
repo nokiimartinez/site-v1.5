@@ -61,7 +61,7 @@
 				</div>
 				<div class="py-4 walbaum_light ">
 					<input type="checkbox" id="check">
-					En soumettant ce formulaire, je prends <br> connaissance que les informations declarées <br> dans ce formulaire soient utilisés pour permettre <br> de me recontacter. 
+					En soumettant ce formulaire, je prends <br> connaissance que les informations declarées <br> dans celui-ci soient utilisées pour permettre <br> de me recontacter. 
 				</div>
 				<div class="mb-3 mt-3 text-center">
 					<button type="submit" class="disabled ps-5 pe-5 fs-5 me-5 walbaum_light" id="bouton">Envoyer</button>
